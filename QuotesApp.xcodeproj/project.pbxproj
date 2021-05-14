@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D44689FE264EA09600FEDC7C /* QuotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44689FC264EA09600FEDC7C /* QuotesTableViewCell.swift */; };
+		D44689FF264EA09600FEDC7C /* QuotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D44689FD264EA09600FEDC7C /* QuotesTableViewCell.xib */; };
+		D4468A02264EAA2A00FEDC7C /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4468A01264EAA2A00FEDC7C /* Pacifico-Regular.ttf */; };
 		D4FA05C8264D31880061CC24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA05C7264D31880061CC24 /* AppDelegate.swift */; };
 		D4FA05CA264D31880061CC24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA05C9264D31880061CC24 /* SceneDelegate.swift */; };
 		D4FA05CC264D31880061CC24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA05CB264D31880061CC24 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D44689FC264EA09600FEDC7C /* QuotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTableViewCell.swift; sourceTree = "<group>"; };
+		D44689FD264EA09600FEDC7C /* QuotesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotesTableViewCell.xib; sourceTree = "<group>"; };
+		D4468A01264EAA2A00FEDC7C /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		D4FA05C4264D31880061CC24 /* QuotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4FA05C7264D31880061CC24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4FA05C9264D31880061CC24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D44689FB264EA05700FEDC7C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D44689FC264EA09600FEDC7C /* QuotesTableViewCell.swift */,
+				D44689FD264EA09600FEDC7C /* QuotesTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D4468A00264EAA0500FEDC7C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D4468A01264EAA2A00FEDC7C /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D4FA05BB264D31880061CC24 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +79,8 @@
 		D4FA05C6264D31880061CC24 /* QuotesApp */ = {
 			isa = PBXGroup;
 			children = (
+				D4468A00264EAA0500FEDC7C /* Fonts */,
+				D44689FB264EA05700FEDC7C /* Cell */,
 				D4FA05C7264D31880061CC24 /* AppDelegate.swift */,
 				D4FA05C9264D31880061CC24 /* SceneDelegate.swift */,
 				D4FA05CB264D31880061CC24 /* ViewController.swift */,
@@ -124,9 +149,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44689FF264EA09600FEDC7C /* QuotesTableViewCell.xib in Resources */,
 				D4FA05D4264D318C0061CC24 /* LaunchScreen.storyboard in Resources */,
 				D4FA05D1264D318C0061CC24 /* Assets.xcassets in Resources */,
 				D4FA05CF264D31880061CC24 /* Main.storyboard in Resources */,
+				D4468A02264EAA2A00FEDC7C /* Pacifico-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44689FE264EA09600FEDC7C /* QuotesTableViewCell.swift in Sources */,
 				D4FA05CC264D31880061CC24 /* ViewController.swift in Sources */,
 				D4FA05C8264D31880061CC24 /* AppDelegate.swift in Sources */,
 				D4FA05CA264D31880061CC24 /* SceneDelegate.swift in Sources */,
