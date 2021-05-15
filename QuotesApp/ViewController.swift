@@ -9,10 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let quotesManager = QuotesManager()
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        quotesManager.fetchQuotes()
         tableView.register(UINib(nibName: "QuotesTableViewCell", bundle: nil), forCellReuseIdentifier: "QuotesCell")
         tableView.delegate = self
         tableView.dataSource = self
@@ -28,5 +30,6 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "QuotesCell", for: indexPath)
         return cell
     }
+  
     
 }

@@ -10,11 +10,12 @@ import UIKit
 class QuotesTableViewCell: UITableViewCell {
     
     
-    @IBOutlet weak var quotesTextLabel: UITextView!
-    @IBOutlet weak var socialMediaView: UIView!
+
+    @IBOutlet weak var quotesView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        quotesView.layer.cornerRadius = 7
         // Initialization code
     }
 
