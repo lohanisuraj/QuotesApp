@@ -8,18 +8,22 @@
 import Foundation
 
 protocol QuotesManagerDelegate {
-   func didUpdateQuotesData()
+    func didUpdateQuotesData(quotesData: [QuotesData])
+    func didErrorOccur(errror: Error)
 }
 
 struct QuotesManager {
-    let quotesUrl = "https://quoteapi.answersflow.com/quotes/api/all-api/"
+    
+    var delegate: QuotesManagerDelegate?
+    
+    let quotesUrl = K.url
     
     func fetchQuotes(){
         if let url = URL(string: quotesUrl){
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { data, response, error in
                 if error != nil{
-                    print(error!)
+                    self.delegate?.didErrorOccur(errror: error!)
                 }else{
                     let decoder = JSONDecoder()
                     if let safeData = data{
@@ -27,9 +31,9 @@ struct QuotesManager {
 //                        print(dataString)
                         do{
                             let quotes  = try decoder.decode([QuotesData].self, from: safeData)
-                            print(quotes[0].id)
+                            self.delegate?.didUpdateQuotesData(quotesData: quotes)
                         }catch{
-                            print(error)
+                            self.delegate?.didErrorOccur(errror: error)
                         }
                         
                     }

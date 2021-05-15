@@ -12,6 +12,7 @@
 		D4468A02264EAA2A00FEDC7C /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4468A01264EAA2A00FEDC7C /* Pacifico-Regular.ttf */; };
 		D453C15F2650042C00438B20 /* QuotesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453C15E2650042C00438B20 /* QuotesData.swift */; };
 		D453C1612650044300438B20 /* QuotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453C1602650044300438B20 /* QuotesManager.swift */; };
+		D453C1642650169400438B20 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453C1632650169400438B20 /* Constant.swift */; };
 		D4FA05C8264D31880061CC24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA05C7264D31880061CC24 /* AppDelegate.swift */; };
 		D4FA05CA264D31880061CC24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA05C9264D31880061CC24 /* SceneDelegate.swift */; };
 		D4FA05CC264D31880061CC24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA05CB264D31880061CC24 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		D4468A01264EAA2A00FEDC7C /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		D453C15E2650042C00438B20 /* QuotesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesData.swift; sourceTree = "<group>"; };
 		D453C1602650044300438B20 /* QuotesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesManager.swift; sourceTree = "<group>"; };
+		D453C1632650169400438B20 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		D4FA05C4264D31880061CC24 /* QuotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4FA05C7264D31880061CC24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4FA05C9264D31880061CC24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D453C1622650168300438B20 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D453C1632650169400438B20 /* Constant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		D4FA05BB264D31880061CC24 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 		D4FA05C6264D31880061CC24 /* QuotesApp */ = {
 			isa = PBXGroup;
 			children = (
+				D453C1622650168300438B20 /* Constants */,
 				D4468A00264EAA0500FEDC7C /* Fonts */,
 				D453C15D265003BF00438B20 /* Models */,
 				D44689FB264EA05700FEDC7C /* Cell */,
@@ -180,6 +191,7 @@
 			files = (
 				D44689FE264EA09600FEDC7C /* QuotesTableViewCell.swift in Sources */,
 				D4FA05CC264D31880061CC24 /* ViewController.swift in Sources */,
+				D453C1642650169400438B20 /* Constant.swift in Sources */,
 				D453C15F2650042C00438B20 /* QuotesData.swift in Sources */,
 				D4FA05C8264D31880061CC24 /* AppDelegate.swift in Sources */,
 				D453C1612650044300438B20 /* QuotesManager.swift in Sources */,
