@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,QuotesManagerDelegate {
+class HomeViewController: UIViewController,QuotesManagerDelegate {
     var quotesManager = QuotesManager()
     var data: [QuotesData]?
 
@@ -34,7 +34,7 @@ class ViewController: UIViewController,QuotesManagerDelegate {
     }
 }
 
-extension ViewController: UITableViewDelegate,UITableViewDataSource{
+extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data?.count ?? 0
     }
